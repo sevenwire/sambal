@@ -312,6 +312,7 @@ module Sambal
       flags << "--debuglevel #{options[:debug_level]}" if options[:debug_level]
       flags << '--encrypt' if options[:encrypt]
       flags << "--max-protocol #{options[:max_protocol]}" if options[:max_protocol]
+      flags << "--timeout #{options[:timeout]}" if options[:timeout]
       flags << '--use-ccache' if options[:use_ccache]
       flags << "--socket-options #{options[:socket_options]}" if options[:socket_options]
       flags << "--port #{options[:port]}" if options[:port]
